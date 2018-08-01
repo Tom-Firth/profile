@@ -28,7 +28,7 @@ body {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
-#profil {
+#profil_image {
   margin-top: 50px;
   border-radius: 50%;
   border: 1px #EEE solid;
@@ -71,17 +71,25 @@ ul li {
   padding-bottom: 30px;
 }
 
+.center_text {
+  text-align: center;
+}
+
 .nav_fixed {
   margin: 0;
   padding: 0;
   top: 0;
   left: 0;
   position: fixed;
-  width: 100px;
+  width: 80px;
   height: 100vh;
   background: white;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   color: #7d7d7d;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 @media (max-width: 540px) {
@@ -92,7 +100,7 @@ ul li {
 
   }
 
-  #profil {
+  #profil_image {
     width: 150px;
   }
 

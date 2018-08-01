@@ -5,20 +5,26 @@
   <title>Thomas Colombet</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="nav_fixed">
-
+    <nav>
+      <p class="center_text bold">Menu</p>
+      <a class="js-scrollTo" href="#profil">Profil</a>
+      <a class="js-scrollTo" href="#contacts">Contacts</a>
+      <a class="js-scrollTo" href="#skills">Skills</a>
+    </nav>
   </div>
 
-  <div class="container">
-    <img id="profil" src="images/thomas_colombet.jpeg">
+  <div id="profil" class="container">
+    <img id="profil_image" src="images/thomas_colombet.jpeg">
     <h1 class="title-1">Thomas Colombet</h1>
     <h2 class="title-2">Fullstack Developer<br>Ruby On Rails</h2>
   </div>
 
-  <div class="container">
+  <div id="contacts" class="container">
     <div class="center">
       <h2 class="title-1">Contacts</h2>
       <ul>
@@ -41,7 +47,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div id="skills" class="container">
     <div class="center">
       <h2 class="title-1">Skills</h2>
       <ul>
@@ -68,4 +74,13 @@
   </div>
 
 </body>
+
+<script>
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+    var page = $(this).attr('href'); // Page cible
+    var speed = 750; // Durée de l'animation (en ms)
+    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+    return false;
+  });
+</script>
 </html>
