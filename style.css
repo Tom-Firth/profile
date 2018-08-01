@@ -97,6 +97,25 @@ ul li {
   height: 200px;
 }
 
+.wagon_img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.container_wagon > .center {
+  padding-bottom: 0;
+}
+
+.a_wagon {
+  color: red;
+  opacity: 0.6;
+}
+
+.a_wagon:hover {
+  color: red;
+  opacity: 0.8;
+}
+
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
